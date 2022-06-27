@@ -1,0 +1,17 @@
+{% extends '0_outline.html' %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block big %}!!!! error !!!!!{% endblock %}
+{% block small %}
+<p>{{ do }} {{ si }}는 존재하지 않습니다.</p>
+<p>지역 이름을 제대로 입력해주세요!</p>
+<p>예) 서울특별시, 강북구</p>
+<br>
+<p>제대로 입력했는데도 해당 페이지가 뜰 경우</p>
+<p>'구'까지 띄어쓰기 없이 입력해주세요!</p>
+<p>예) 용인시수지구</p>
+<P > 
+    <p>│    <a href="/hungry/">이전 화면</a>    │</p>
+</p>
+{% endblock %}

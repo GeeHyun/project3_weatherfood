@@ -1,0 +1,20 @@
+{% extends '0_outline.html' %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block big %}오늘 뭐 먹지?{% endblock %}
+{% block small %}
+<p>오늘의 추천 음식은</p>
+<p>╭ ◜◝ ͡ ◜◝ ͡ ◜◝ ╮</p>
+<p>{{ result }}</p>
+<p>╰ ◟◞ ͜ ◟ ͜ ◟◞ ╯</p>
+<p>입니다!</p>
+
+<br>
+<p>날씨와 음식의 데이터가 궁금하다면?</p>
+<p>│    <a href="/dashboard/">CLICK!</a>    │</p>
+<br>
+<p>홈 화면으로 돌아가기</p>
+<p>│    <a href="/">HOME</a>    │</p>
+<br>
+{% endblock %}

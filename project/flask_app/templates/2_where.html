@@ -1,0 +1,16 @@
+{% extends '0_outline.html' %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block big %}오늘 뭐 먹지?{% endblock %}
+{% block small %}
+<p>현재 시간 {{ a }} {{ h }}시 {{ m }}분...</p>
+<p>당신의 현재 위치는?</p>
+<P >
+    <form action="/hungry/" method="POST">
+        <p><input style="color:black" type="text" name="do" placeholder="광역시도"></p>
+        <p><input style="color:black" type="text" name="si" placeholder="시군구"></p>
+        <p>│    <input style="color:black" type="submit" value="입력완료!">    │</p>
+    </form>
+</p>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends '0_outline.html' %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block big %}오늘 뭐 먹지?{% endblock %}
+{% block small %}
+{% for t in text %}
+<p>{{ t }}</p>
+<br>
+{% endfor %}
+<p>│    <a href="/hungry/result/">이런 날씨에 어울리는 메뉴는?</a>    │</p>
+{% endblock %}
